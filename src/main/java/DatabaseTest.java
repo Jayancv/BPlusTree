@@ -1,5 +1,5 @@
-import Compression.FibonacciCodder;
-import Compression.FibonacciDecoder;
+import FibonacciCompression.FibonacciCodder;
+import FibonacciCompression.FibonacciDecoder;
 
 public class DatabaseTest {
 

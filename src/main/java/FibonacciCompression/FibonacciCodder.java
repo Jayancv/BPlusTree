@@ -1,4 +1,4 @@
-package Compression;
+package FibonacciCompression;
 
 import java.io.*;
 import java.util.ArrayList;

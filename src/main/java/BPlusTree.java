@@ -1,10 +1,8 @@
-import Compression.FibonacciCodder;
+import FibonacciCompression.FibonacciCodder;
 
-import java.io.IOException;
 import java.util.AbstractMap;
 import java.util.Map.Entry;
 import java.util.ArrayList;
-import java.util.Stack;
 
 
 /**

@@ -1,4 +1,4 @@
-package Compression;
+package FibonacciCompression;
 
 public class FibonacciDecoder {
 
