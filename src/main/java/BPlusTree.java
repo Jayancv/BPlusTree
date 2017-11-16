@@ -20,6 +20,7 @@ public class BPlusTree<K extends Comparable<K>, T> {
      * @return value
      */
     public T search(K key) {
+		System.out.println("AAAA");
         // Return if empty tree or key
         if(key == null || root == null) {
             return null;
