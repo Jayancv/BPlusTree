@@ -22,8 +22,7 @@ public class Utils {
 	}
 
 	
-	public static <K extends Comparable<K>,T> String 
-    outputTree(BPlusTree<K,T> tree) {
+	public static <K extends Comparable<K>,T> String outputTree(BPlusTree<K,T> tree) {
   /* Temporary queue. */
   LinkedBlockingQueue<Node<K,T>> queue;
   

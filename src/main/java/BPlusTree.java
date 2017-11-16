@@ -546,43 +546,43 @@ public class BPlusTree<K extends Comparable<K>, T> {
         }
     }
 
-    public void inorder() throws IOException {
-        if (root == null) {
-            return;
-        }
-
-        //keep the nodes in the path that are waiting to be visited
-        Stack<Node> stack = new Stack<Node>();
-        Node node = root;
-
-        //first node to be visited will be the left one
-        while (node.isLeafNode==false) {
-            stack.push(node);
-            node = (Node) ((IndexNode) node).children.get(0);
-        }
-
-        node=(LeafNode)node;
-        fibonacciCodder.write(((LeafNode) node).values.get(0));
-        for (int i = 0; i <((LeafNode) node).values.size() ; i++) {
-            int aa = (Integer)node.keys.get(i) - (Integer)node.keys.get(i - 1);
-            String num = fibonacciCodder.createFibonacciCode(aa);
-            fibonacciCodder.write(num);
-        }
-        // traverse the tree
-//        while (stack.size() > 0) {
-//            // visit the top node
-//            node = stack.pop();
-//            System.out.print(node.data + " ");
-//            if (node.right != null) {
-//                node = node.right;
-//
-//                // the next node to be visited is the leftmost
-//                while (node != null) {
-//                    stack.push(node);
-//                    node = node.left;
-//                }
-//            }
+//    public void inorder() throws IOException {
+//        if (root == null) {
+//            return;
 //        }
-
-    }
+//
+//        //keep the nodes in the path that are waiting to be visited
+//        Stack<Node> stack = new Stack<Node>();
+//        Node node = root;
+//
+//        //first node to be visited will be the left one
+//        while (node.isLeafNode==false) {
+//            stack.push(node);
+//            node = (Node) ((IndexNode) node).children.get(0);
+//        }
+//
+//        node=(LeafNode)node;
+//        fibonacciCodder.write(((LeafNode) node).values.get(0));
+//        for (int i = 0; i <((LeafNode) node).values.size() ; i++) {
+//            int aa = (Integer)node.keys.get(i) - (Integer)node.keys.get(i - 1);
+//            String num = fibonacciCodder.createFibonacciCode(aa);
+//            fibonacciCodder.write(num);
+//        }
+//        // traverse the tree
+////        while (stack.size() > 0) {
+////            // visit the top node
+////            node = stack.pop();
+////            System.out.print(node.data + " ");
+////            if (node.right != null) {
+////                node = node.right;
+////
+////                // the next node to be visited is the leftmost
+////                while (node != null) {
+////                    stack.push(node);
+////                    node = node.left;
+////                }
+////            }
+////        }
+//
+//    }
 }

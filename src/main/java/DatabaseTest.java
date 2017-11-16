@@ -1,3 +1,5 @@
+import Compression.FibonacciCodder;
+import Compression.FibonacciDecoder;
 
 public class DatabaseTest {
 
@@ -8,5 +10,11 @@ public class DatabaseTest {
         Utils.bulkInsert(tree, inputKey, inputValues);
         String output = Utils.outputTree(tree);
         System.out.println(output);
+
+        FibonacciCodder codder= new FibonacciCodder();
+        System.out.println(codder.createFibonacciCode(50));
+
+        FibonacciDecoder decoder= new FibonacciDecoder();
+        System.out.println(decoder.getRealValue("001001011"));
     }
 }

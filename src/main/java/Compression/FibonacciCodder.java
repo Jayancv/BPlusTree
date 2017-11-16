@@ -114,7 +114,7 @@ public class FibonacciCodder {
 //        }
 //    }
 
-    public static void main(String[] args) throws IOException {
+//    public static void main(String[] args) throws IOException {
 
 //        Node node = new Node();
 //        node.key.add(5);
@@ -137,6 +137,6 @@ public class FibonacciCodder {
 //        boolean done1 = new FibonaccCodder().compressionTest(node1);
 
 
-
-    }
+//
+//    }
 }
