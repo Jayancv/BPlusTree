@@ -1,3 +1,5 @@
+package ZlibCompression;
+
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;

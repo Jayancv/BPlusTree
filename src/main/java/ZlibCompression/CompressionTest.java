@@ -1,4 +1,4 @@
-
+package ZlibCompression;
 
 public class CompressionTest
 {
@@ -6,7 +6,7 @@ public class CompressionTest
     {
         Compressor compressor = new Compressor();
 
-        String stringToCompress = "20";
+        String stringToCompress = "Nnslssdssfsf";
         //String stringToCompress = "When in the course of human events, it becomes necessary for one people to dissolve the bands that bind them...";
         System.out.println("stringToCompress is: '" + stringToCompress + "'");
         byte[] bytesCompressed = compressor.compress(stringToCompress);

@@ -12,7 +12,8 @@ public class DatabaseTest {
         System.out.println(output);
 
         FibonacciCodder codder= new FibonacciCodder();
-        System.out.println(codder.createFibonacciCode(50));
+        System.out.println("Fib " + codder.createFibonacciCode(5));
+        System.out.println(Integer.toBinaryString(5));
 
         FibonacciDecoder decoder= new FibonacciDecoder();
         System.out.println(decoder.getRealValue("001001011"));

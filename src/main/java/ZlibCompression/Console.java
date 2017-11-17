@@ -1,3 +1,5 @@
+package ZlibCompression;
+
 class Console
 {
     public static void writeBytesAsHexadecimal(byte[] bytesToWrite)
