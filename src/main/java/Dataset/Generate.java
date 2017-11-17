@@ -9,21 +9,22 @@ public class Generate {
     public static void main(String[] args) {
         StringBuilder stringBuilder = new StringBuilder();
         StringBuilder stringBuilder1 = new StringBuilder();
-        int k=0;
-
-        for (int i = 0; i < 10000; i++) {
-            stringBuilder.append(i);
+        int k = 0;
+        int s = 0;
+        for (int i = 0; i < 100; i++) {
+            stringBuilder.append(s);
             stringBuilder.append(",");
+            s = s + 50;
         }
-        for (int i = 9000; k < 10000; i++) {
-            stringBuilder1.append(i+50);
+        for (int i = 0; i < 100; i++) {
+            stringBuilder1.append(k);
             stringBuilder1.append(",");
-            k++;
+            k = k + 50;
         }
 
         PrintWriter writer = null;
         try {
-            writer = new PrintWriter("test10000.txt", "UTF-8");
+            writer = new PrintWriter("test100.txt", "UTF-8");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {
